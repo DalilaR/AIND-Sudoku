@@ -7,7 +7,10 @@ A: *Student should provide answer here*
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
+  Find the unit or units of 2 coordinates with the same 2 digits values, then just see their digits are shared by other cells.  If yes, remove the digits from the other cells. 
 A: *Student should provide answer here*
+There is no need for a new code to deal with this case, I just added the coordinates in the diagonal to unitlist, and made sure 
+ coordinates on diagonal have their peers list, and units updates to have their giving diagonal.
 
 ### Install
 
