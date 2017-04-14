@@ -4,6 +4,14 @@
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
 A: *Student should provide answer here*
+We know that each cell in 3*3 box, or in a column or a row has to have a unique number from 0 to 9.
+However, when solving the problems we may find cells can have multiple choices.  Now, if 2 cells ( in the same box, column, or row) share all but one digit, one can assume that the digits they don't share is the number that each cell can have).  Hence, knowing the constraints and that each cell can have only one and only one distinct number helps us reduce use of search algorithm.
+Here is my Algorithm
+Sorry, I totally forget to add it here.  I had it in the code.
+#Get a value in the grid.  Make sure that the value as at least 2 digits.
+#Find its its units
+#In each unit, check if a duplicate exists, if it does go over the unit and replace its digits
+# from all the other boxes.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
